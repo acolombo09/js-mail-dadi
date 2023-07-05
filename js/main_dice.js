@@ -20,3 +20,21 @@ Consigli del giorno:
 così come lo faremmo “a mano”
 Buon lavoro e buon divertimento!
 */
+
+// creo le variabili che rappresentano il giocatore e il "pc".
+// assegno valore random massimo di 6 in quanto sto simulando dei dadi.
+const player1 = Math.floor(Math.random() * 6) + 1;
+const computer = Math.floor(Math.random() * 6) + 1;
+
+//stampo i valori risultanti dalle variabili con random.
+console.log("Player1:" + " " + player1);
+console.log("Computer:" + " " + computer);
+
+//imposto la condizione per stabilire per stabilire il vincitore (punteggio più alto)
+if (player1 > computer) {
+  console.log("Hai vinto!");
+} else if (computer === player1) {
+  console.log("Pareggio!");
+} else {
+  console.log("Hai perso!");
+}
